@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 320,
+    "left": 0,
+    "width": 1989,
+    "height": 2652,
+    "isRotated": true,
+    "originalWidth": 1989,
+    "originalHeight": 3293
+  },
+  "imagePath": "image-targets/tarjet_luminance.png",
+  "metadata": null,
+  "name": "tarjet",
+  "resources": {
+    "originalImage": "tarjet_original.png",
+    "croppedImage": "tarjet_cropped.png",
+    "thumbnailImage": "tarjet_thumbnail.png",
+    "luminanceImage": "tarjet_luminance.png"
+  },
+  "created": 1787352424696,
+  "updated": 1787352424696
+}

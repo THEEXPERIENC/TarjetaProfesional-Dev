@@ -90,38 +90,66 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "order": 0.6644431107322474
     },
-    "fdc8aadc-4cdc-4e31-bcfa-b1ebcdb7291a": {
-      "id": "fdc8aadc-4cdc-4e31-bcfa-b1ebcdb7291a",
+    "7c09fe7f-0cee-49e7-ac2d-6d1271d2a24b": {
+      "id": "7c09fe7f-0cee-49e7-ac2d-6d1271d2a24b",
       "position": [
-        0.01486333074375932,
-        0,
-        0.49273774728080566
+        0.02702702702702705,
+        2.0162749761841318e-21,
+        -1.1551231602316664e-19
       ],
       "rotation": [
-        0,
-        0,
-        0,
-        1
+        0.7071067811865485,
+        1.5374473780604123e-18,
+        -1.484695674849736e-18,
+        0.7071067811865466
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.2702702702702701,
+        0.27027027027027084,
+        0.27027027027027084
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "ff8a4d6f-5af5-495b-931f-1b68e7bcd7fb",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/finalito.glb"
+        },
+        "animationClip": "Armature|mixamo.com|Layer0",
+        "loop": true
+      },
+      "name": "finalito.glb",
+      "order": 6.784904815294766
+    },
+    "ff8a4d6f-5af5-495b-931f-1b68e7bcd7fb": {
+      "id": "ff8a4d6f-5af5-495b-931f-1b68e7bcd7fb",
+      "position": [
+        -0.10000000000000014,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067811865485,
+        -1.537447378060408e-18,
+        1.484695674849736e-18,
+        0.7071067811865485
+      ],
+      "scale": [
+        3.700000000000002,
+        3.700000000000002,
+        3.700000000000002
       ],
       "geometry": null,
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/model.glb"
-        },
-        "animationClip": "",
-        "loop": true
+      "name": "Objetivo de la imagen",
+      "imageTarget": {
+        "name": "tarjet"
       },
-      "name": "model.glb",
-      "order": 3.3352298903740256
+      "order": 2.4973217833506567
     }
   },
   "spaces": {
