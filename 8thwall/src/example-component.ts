@@ -12,21 +12,21 @@ ecs.registerComponent({
     const idle = component.schema.idleAnim || 'Armature|mixamo.com|Layer0'
     const action = component.schema.actionAnim || 'Armature.001|mixamo.com|Layer0'
 
-    const switchAnimation = () => {
+    // Función que altera la animación en el modelo 3D
+    const triggerChange = () => {
       isAction = !isAction
       const nextAnim = isAction ? action : idle
 
-      // Forzar la actualización del clip activo en el componente GltfModel
-      ecs.GltfModel.mutate(world, component.eid, (cursor) => {
-        cursor.animationClip = nextAnim
+      ecs.GltfModel.set(world, component.eid, {
+        animationClip: nextAnim,
+        loop: true,
+        paused: false,
+        timeScale: 1,
       })
     }
 
-    // Registrar evento global en el lienzo de 8th Wall
-    window.addEventListener('pointerdown', switchAnimation)
-
-    return () => {
-      window.removeEventListener('pointerdown', switchAnimation)
-    }
+    // Método directo de 8th Wall ECS para eventos de toque en la entidad
+    world.events.addListener(component.eid, ecs.input.SCREEN_TOUCH_START, triggerChange)
+    world.events.addListener(component.eid, 'interact', triggerChange)
   },
 })
