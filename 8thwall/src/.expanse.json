@@ -97,7 +97,7 @@
     "7c09fe7f-0cee-49e7-ac2d-6d1271d2a24b": {
       "id": "7c09fe7f-0cee-49e7-ac2d-6d1271d2a24b",
       "position": [
-        0.02702702702702705,
+        0.027027027027027167,
         2.0162749761841318e-21,
         -1.1551231602316664e-19
       ],
@@ -115,7 +115,16 @@
       "geometry": null,
       "material": null,
       "parentId": "ff8a4d6f-5af5-495b-931f-1b68e7bcd7fb",
-      "components": {},
+      "components": {
+        "5cdef1fc-2b50-40a9-8833-bcc61e2ac128": {
+          "id": "5cdef1fc-2b50-40a9-8833-bcc61e2ac128",
+          "name": "example-component",
+          "parameters": {
+            "idleAnim": "Armature|mixamo.com|Layer0",
+            "actionAnim": "Armature.001|mixamo.com|Layer0"
+          }
+        }
+      },
       "gltfModel": {
         "src": {
           "type": "asset",
@@ -125,7 +134,18 @@
         "loop": true
       },
       "name": "finalito.glb",
-      "order": 6.784904815294766
+      "order": 6.784904815294766,
+      "collider": {
+        "geometry": {
+          "type": "auto"
+        },
+        "mass": 0,
+        "type": "static",
+        "eventOnly": true,
+        "offsetX": -2.220446049250313e-16,
+        "offsetZ": 1.3877787807814457e-16,
+        "offsetY": -24.000000000000004
+      }
     },
     "ff8a4d6f-5af5-495b-931f-1b68e7bcd7fb": {
       "id": "ff8a4d6f-5af5-495b-931f-1b68e7bcd7fb",
