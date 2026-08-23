@@ -9,19 +9,24 @@ ecs.registerComponent({
     actionAnim: ecs.string,
   },
   add: (world, component) => {
-    // Asigna tus animaciones exactas por defecto
     const idle = component.schema.idleAnim || 'Armature|mixamo.com|Layer0'
     const action = component.schema.actionAnim || 'Armature.001|mixamo.com|Layer0'
 
-    // Escucha el clic sobre la entidad usando su ID único (eid)
-    world.events.addListener(component.eid, 'click', () => {
+    const switchAnimation = () => {
       isAction = !isAction
       const nextAnim = isAction ? action : idle
 
-      // Cambia la animación directamente en el modelo 3D
-      ecs.GltfModel.set(world, component.eid, {
-        animationClip: nextAnim,
+      // Forzar la actualización del clip activo en el componente GltfModel
+      ecs.GltfModel.mutate(world, component.eid, (cursor) => {
+        cursor.animationClip = nextAnim
       })
-    })
+    }
+
+    // Registrar evento global en el lienzo de 8th Wall
+    window.addEventListener('pointerdown', switchAnimation)
+
+    return () => {
+      window.removeEventListener('pointerdown', switchAnimation)
+    }
   },
 })
