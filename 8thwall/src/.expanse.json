@@ -209,7 +209,9 @@
           "asset": "assets/ProyectoVideo.mp4"
         },
         "textureFiltering": "sharp",
-        "side": "double"
+        "side": "double",
+        "depthTest": false,
+        "depthWrite": false
       },
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {
