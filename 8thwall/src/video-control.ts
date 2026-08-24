@@ -6,7 +6,7 @@ ecs.registerComponent({
     videoUrl: ecs.string,
   },
   schemaDefaults: {
-    videoUrl: 'ProyectoVideo.mp4',
+    videoUrl: 'animacion-realidadV.mp4',
   },
   add: (world, component) => {
     let isPlaying = true
