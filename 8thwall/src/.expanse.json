@@ -288,8 +288,8 @@
       },
       "ui": {
         "type": "3d",
-        "width": 100,
-        "height": 36,
+        "width": 60,
+        "height": 60,
         "background": "#ad50ff",
         "borderRadius": 18,
         "flexDirection": "row",
@@ -337,31 +337,6 @@
       },
       "order": 0.1496101643529234
     },
-    "a0a15494-7d8b-4154-88a8-defc2aaf424d": {
-      "id": "a0a15494-7d8b-4154-88a8-defc2aaf424d",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "cbf3de78-ef0e-4d6a-814c-33b6cf46d2f8",
-      "components": {},
-      "name": "InstagramLogo.png",
-      "order": 1.1338781432925478
-    },
     "7e34b6c0-7cb2-446c-a279-222cad144a02": {
       "id": "7e34b6c0-7cb2-446c-a279-222cad144a02",
       "position": [
@@ -392,8 +367,8 @@
       },
       "ui": {
         "type": "3d",
-        "width": 100,
-        "height": 36,
+        "width": 60,
+        "height": 60,
         "background": "#ad50ff",
         "borderRadius": 18,
         "flexDirection": "row",
@@ -440,31 +415,6 @@
         "backgroundSize": "contain"
       },
       "order": 0.011239826350005366
-    },
-    "de87cc14-699f-4826-8b8c-408eec9e9a7d": {
-      "id": "de87cc14-699f-4826-8b8c-408eec9e9a7d",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "3c019155-1ab3-4e1d-a510-57a9c23c749f",
-      "components": {},
-      "name": "TiktokLogo.png",
-      "order": 1.7852182407515853
     }
   },
   "spaces": {
