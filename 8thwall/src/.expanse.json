@@ -178,22 +178,22 @@
       },
       "order": 2.4973217833506567
     },
-    "93feb3c7-c752-41d4-838a-bcfe47f2a079": {
-      "id": "93feb3c7-c752-41d4-838a-bcfe47f2a079",
+    "c4c44d34-73d7-48c7-b26d-0ace6b8890e5": {
+      "id": "c4c44d34-73d7-48c7-b26d-0ace6b8890e5",
       "position": [
         0,
-        4.031,
-        -2.085827271062689
+        2.888238291123445,
+        -1.2921907210128685
       ],
       "rotation": [
-        0.7071067811865475,
         0,
         0,
-        0.7071067811865476
+        0,
+        1
       ],
       "scale": [
-        3,
-        3,
+        1,
+        1.0000000532124818,
         1.0000000532124818
       ],
       "geometry": {
@@ -203,20 +203,40 @@
       },
       "material": {
         "type": "basic",
-        "color": "#FFFFFF",
+        "color": "#ffffff",
         "textureSrc": {
+          "type": "asset",
+          "asset": "assets/ProyectoVideo.mp4"
+        },
+        "emissiveIntensity": 1,
+        "emissiveMap": {
           "type": "asset",
           "asset": "assets/ProyectoVideo.mp4"
         },
         "side": "double"
       },
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "components": {},
-      "name": "video-plane",
-      "order": 3.5438017608722934
+      "components": {
+        "ccecda9b-b42c-4337-b44f-130876d9601b": {
+          "id": "ccecda9b-b42c-4337-b44f-130876d9601b",
+          "name": "video-control",
+          "parameters": {}
+        }
+      },
+      "name": "video-control",
+      "order": 4.297834446690018,
+      "videoControls": {
+        "paused": false
+      },
+      "collider": {
+        "geometry": {
+          "type": "auto"
+        },
+        "eventOnly": true
+      }
     },
-    "7b98c168-907e-4886-ba4f-73a0d3fbeea4": {
-      "id": "7b98c168-907e-4886-ba4f-73a0d3fbeea4",
+    "ed8abe71-ed62-4277-ba7f-72d7f2ab54dc": {
+      "id": "ed8abe71-ed62-4277-ba7f-72d7f2ab54dc",
       "position": [
         0,
         0,
@@ -235,28 +255,10 @@
       ],
       "geometry": null,
       "material": null,
-      "parentId": "93feb3c7-c752-41d4-838a-bcfe47f2a079",
-      "components": {
-        "ae883081-c4ad-4a86-b3e5-ced1e84dc0f6": {
-          "id": "ae883081-c4ad-4a86-b3e5-ced1e84dc0f6",
-          "name": "video-control"
-        }
-      },
+      "parentId": "c4c44d34-73d7-48c7-b26d-0ace6b8890e5",
+      "components": {},
       "name": "ProyectoVideo.mp4",
-      "order": 1.2960121494451857,
-      "collider": {
-        "geometry": {
-          "type": "box",
-          "depth": 1,
-          "height": 1,
-          "width": 1
-        },
-        "eventOnly": true,
-        "offsetQuaternionX": 0,
-        "offsetQuaternionY": 0,
-        "offsetQuaternionZ": 0,
-        "offsetQuaternionW": 1
-      }
+      "order": 1.4239449808287956
     }
   },
   "spaces": {
