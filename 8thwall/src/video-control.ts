@@ -1,44 +1,32 @@
 import * as ecs from '@8thwall/ecs'
 
-let isHidden = false
+let isPlaying = true
 
 ecs.registerComponent({
   name: 'video-control',
   schema: {},
   add: (world, component) => {
     
-    const toggleVideoVisibility = () => {
-      isHidden = !isHidden
+    const toggleVideo = () => {
+      isPlaying = !isPlaying
+      const videos = document.querySelectorAll('video')
 
-      // 1. Obtener la entidad de 8th Wall Studio
-      const entity = world.getEntity(component.eid)
-
-      // 2. Obtener el elemento HTML del video para detener el audio
-      const videoEl = document.querySelector('video') as HTMLVideoElement | null
-
-      if (isHidden) {
-        // Pausar y mutear audio
-        if (videoEl) {
-          videoEl.pause()
-          videoEl.muted = true
-        }
-
-        // Ocultar entidad en la escena 3D
-        entity.hide()
-
+      if (!isPlaying) {
+        // Pausar y silenciar audio/video
+        videos.forEach((v) => {
+          v.pause()
+          v.muted = true
+        })
       } else {
-        // Mostrar entidad en la escena 3D
-        entity.show()
-
-        // Reproducir y desmutear audio
-        if (videoEl) {
-          videoEl.muted = false
-          videoEl.play().catch(() => {})
-        }
+        // Reanudar reproducción y activar audio
+        videos.forEach((v) => {
+          v.muted = false
+          v.play().catch(() => {})
+        })
       }
     }
 
-    world.events.addListener(component.eid, ecs.input.SCREEN_TOUCH_START, toggleVideoVisibility)
-    world.events.addListener(component.eid, 'click', toggleVideoVisibility)
+    world.events.addListener(component.eid, ecs.input.SCREEN_TOUCH_START, toggleVideo)
+    world.events.addListener(component.eid, 'click', toggleVideo)
   },
 })

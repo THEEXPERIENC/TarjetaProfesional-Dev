@@ -212,19 +212,7 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "name": "video-plane",
-      "order": 3.5438017608722934,
-      "videoControls": {
-        "loop": true
-      },
-      "collider": {
-        "geometry": {
-          "type": "box",
-          "depth": 1,
-          "height": 1,
-          "width": 1
-        },
-        "eventOnly": true
-      }
+      "order": 3.5438017608722934
     },
     "7b98c168-907e-4886-ba4f-73a0d3fbeea4": {
       "id": "7b98c168-907e-4886-ba4f-73a0d3fbeea4",
