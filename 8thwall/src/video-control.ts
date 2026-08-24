@@ -2,15 +2,19 @@ import * as ecs from '@8thwall/ecs'
 
 ecs.registerComponent({
   name: 'video-control',
-  schema: {},
+  schema: {
+    videoUrl: ecs.string,
+  },
+  schemaDefaults: {
+    videoUrl: 'ProyectoVideo.mp4',
+  },
   add: (world, component) => {
     let isPlaying = true
 
     const togglePlay = () => {
       const videoElements = document.querySelectorAll('video')
-      
       isPlaying = !isPlaying
-      
+
       videoElements.forEach((video) => {
         if (!isPlaying) {
           video.pause()
