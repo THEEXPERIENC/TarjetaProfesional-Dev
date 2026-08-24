@@ -1,28 +1,27 @@
 import * as ecs from '@8thwall/ecs'
 
-let isPlaying = false
-
 ecs.registerComponent({
   name: 'video-control',
   schema: {},
   add: (world, component) => {
-    
-    const toggleVideo = () => {
-      const videos = document.querySelectorAll('video')
+    let isPlaying = true
 
-      videos.forEach((v) => {
-        if (isPlaying) {
-          v.pause()
+    const togglePlay = () => {
+      const videoElements = document.querySelectorAll('video')
+      
+      isPlaying = !isPlaying
+      
+      videoElements.forEach((video) => {
+        if (!isPlaying) {
+          video.pause()
         } else {
-          v.muted = false
-          v.play().catch(() => {})
+          video.muted = false
+          video.play().catch(() => {})
         }
       })
-
-      isPlaying = !isPlaying
     }
 
-    world.events.addListener(component.eid, ecs.input.SCREEN_TOUCH_START, toggleVideo)
-    world.events.addListener(component.eid, 'click', toggleVideo)
+    world.events.addListener(component.eid, ecs.input.SCREEN_TOUCH_START, togglePlay)
+    world.events.addListener(component.eid, 'click', togglePlay)
   },
 })

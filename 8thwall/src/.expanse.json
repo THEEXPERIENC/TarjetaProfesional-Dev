@@ -202,7 +202,7 @@
         "height": 1
       },
       "material": {
-        "type": "basic",
+        "type": "unlit",
         "color": "#ffffff",
         "textureSrc": {
           "type": "asset",
@@ -213,7 +213,8 @@
           "type": "asset",
           "asset": "assets/ProyectoVideo.mp4"
         },
-        "side": "double"
+        "side": "double",
+        "mipmaps": false
       },
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {
