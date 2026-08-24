@@ -288,8 +288,8 @@
       },
       "ui": {
         "type": "3d",
-        "width": 60,
-        "height": 60,
+        "width": "100",
+        "height": 100,
         "background": "#ad50ff",
         "borderRadius": 18,
         "flexDirection": "row",
@@ -335,7 +335,17 @@
         "backgroundOpacity": 1,
         "backgroundSize": "contain"
       },
-      "order": 0.1496101643529234
+      "order": 0.1496101643529234,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 1,
+          "height": 1,
+          "width": 1
+        },
+        "offsetX": 0.30000000000000027,
+        "eventOnly": true
+      }
     },
     "7e34b6c0-7cb2-446c-a279-222cad144a02": {
       "id": "7e34b6c0-7cb2-446c-a279-222cad144a02",
@@ -367,8 +377,8 @@
       },
       "ui": {
         "type": "3d",
-        "width": 60,
-        "height": 60,
+        "width": 100,
+        "height": 100,
         "background": "#ad50ff",
         "borderRadius": 18,
         "flexDirection": "row",
