@@ -181,15 +181,15 @@
     "c4c44d34-73d7-48c7-b26d-0ace6b8890e5": {
       "id": "c4c44d34-73d7-48c7-b26d-0ace6b8890e5",
       "position": [
-        0,
-        2.888238291123445,
+        -0.04179865774566749,
+        3.272785814824195,
         -1.2921907210128685
       ],
       "rotation": [
+        0.7071067811865475,
         0,
         0,
-        0,
-        1
+        0.7071067811865476
       ],
       "scale": [
         1,
@@ -208,58 +208,31 @@
           "type": "asset",
           "asset": "assets/ProyectoVideo.mp4"
         },
-        "emissiveIntensity": 1,
-        "emissiveMap": {
-          "type": "asset",
-          "asset": "assets/ProyectoVideo.mp4"
-        },
-        "side": "double",
-        "mipmaps": false
+        "textureFiltering": "sharp",
+        "side": "double"
       },
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {
-        "ccecda9b-b42c-4337-b44f-130876d9601b": {
-          "id": "ccecda9b-b42c-4337-b44f-130876d9601b",
-          "name": "video-control",
-          "parameters": {}
+        "f7e4c792-7f4f-4944-9ccd-5df0804dfbc3": {
+          "id": "f7e4c792-7f4f-4944-9ccd-5df0804dfbc3",
+          "name": "video-control"
         }
       },
       "name": "video-control",
       "order": 4.297834446690018,
       "videoControls": {
-        "paused": false
+        "paused": true,
+        "loop": true
       },
       "collider": {
         "geometry": {
-          "type": "auto"
+          "type": "box",
+          "depth": 1,
+          "height": 1,
+          "width": 1
         },
         "eventOnly": true
       }
-    },
-    "ed8abe71-ed62-4277-ba7f-72d7f2ab54dc": {
-      "id": "ed8abe71-ed62-4277-ba7f-72d7f2ab54dc",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "c4c44d34-73d7-48c7-b26d-0ace6b8890e5",
-      "components": {},
-      "name": "ProyectoVideo.mp4",
-      "order": 1.4239449808287956
     }
   },
   "spaces": {
