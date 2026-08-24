@@ -47,9 +47,9 @@
       "material": null,
       "name": "Camera",
       "position": [
-        0,
-        2.7883116317269643,
-        3.006002427931322
+        -1.599452682546552,
+        4.726329353958794,
+        6.384929998803729
       ],
       "rotation": [
         0.00044368872331410124,
@@ -177,6 +177,93 @@
         "name": "TARJETA"
       },
       "order": 2.4973217833506567
+    },
+    "93feb3c7-c752-41d4-838a-bcfe47f2a079": {
+      "id": "93feb3c7-c752-41d4-838a-bcfe47f2a079",
+      "position": [
+        0,
+        4.031134565972176,
+        -2.085827271062689
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        3,
+        1.0000000532124818
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/ProyectoVideo.mp4"
+        }
+      },
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "video-plane",
+      "order": 3.5438017608722934,
+      "videoControls": {
+        "loop": true
+      },
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 1,
+          "height": 1,
+          "width": 1
+        },
+        "eventOnly": true
+      }
+    },
+    "7b98c168-907e-4886-ba4f-73a0d3fbeea4": {
+      "id": "7b98c168-907e-4886-ba4f-73a0d3fbeea4",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "93feb3c7-c752-41d4-838a-bcfe47f2a079",
+      "components": {
+        "ae883081-c4ad-4a86-b3e5-ced1e84dc0f6": {
+          "id": "ae883081-c4ad-4a86-b3e5-ced1e84dc0f6",
+          "name": "video-control"
+        }
+      },
+      "name": "ProyectoVideo.mp4",
+      "order": 1.2960121494451857,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 1,
+          "height": 1,
+          "width": 1
+        },
+        "eventOnly": true
+      }
     }
   },
   "spaces": {
