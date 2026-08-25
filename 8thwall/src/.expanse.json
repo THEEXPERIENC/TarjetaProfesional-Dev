@@ -323,7 +323,13 @@
       "geometry": null,
       "material": null,
       "parentId": "bf03e99d-62f9-4df9-bfb5-59b401a827ee",
-      "components": {},
+      "components": {
+        "75e6b339-7b89-4204-9987-0bf87499700b": {
+          "id": "75e6b339-7b89-4204-9987-0bf87499700b",
+          "name": "instagram-button",
+          "parameters": {}
+        }
+      },
       "name": "Icono",
       "ui": {
         "width": 60,
@@ -413,7 +419,13 @@
       "geometry": null,
       "material": null,
       "parentId": "7e34b6c0-7cb2-446c-a279-222cad144a02",
-      "components": {},
+      "components": {
+        "2fab032b-3fb0-41df-b083-6c03bdfda804": {
+          "id": "2fab032b-3fb0-41df-b083-6c03bdfda804",
+          "name": "tiktok-button",
+          "parameters": {}
+        }
+      },
       "name": "Icono",
       "ui": {
         "width": 60,
