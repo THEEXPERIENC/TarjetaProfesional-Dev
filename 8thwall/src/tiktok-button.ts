@@ -10,16 +10,19 @@ ecs.registerComponent({
   },
   add: (world, component) => {
     const openTikTok = (event: any) => {
-      if (event && event.stopPropagation) {
-        event.stopPropagation()
-      }
+      const targetUrl = component.schema.url
+      if (!targetUrl) return
 
-      if (component.schema.url) {
-        window.open(component.schema.url, '_blank')
+      // Intenta abrir en nueva pestaña; si el navegador bloquea el popup, redirige la pestaña actual
+      const newTab = window.open(targetUrl, '_blank')
+      if (!newTab || newTab.closed || typeof newTab.closed === 'undefined') {
+        window.location.href = targetUrl
       }
     }
 
+    // Registrar escuchadores de eventos
     world.events.addListener(component.eid, ecs.input.UI_CLICK, openTikTok)
+    world.events.addListener(component.eid, ecs.input.SCREEN_TOUCH_START, openTikTok)
     world.events.addListener(component.eid, 'click', openTikTok)
   },
 })

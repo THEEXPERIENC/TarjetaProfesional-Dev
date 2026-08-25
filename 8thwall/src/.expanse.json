@@ -386,7 +386,8 @@
         "padding": "10",
         "gap": "6",
         "alignItems": "center",
-        "justifyContent": "center"
+        "justifyContent": "center",
+        "ignoreRaycast": false
       },
       "name": "tiktok-button",
       "order": 11.198654829825491
@@ -424,7 +425,17 @@
         "backgroundOpacity": 1,
         "backgroundSize": "contain"
       },
-      "order": 0.011239826350005366
+      "order": 0.011239826350005366,
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 1,
+          "height": 1,
+          "width": 1
+        },
+        "offsetX": 0.30000000000000004,
+        "eventOnly": true
+      }
     }
   },
   "spaces": {
